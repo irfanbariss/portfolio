@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stlye.css" />
+    <script
+      src="https://kit.fontawesome.com/5e08e5a6a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <h1 class="logo">Barış<span class="dot">.</span></h1>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <img src="imgs/menu.png" alt="Menu Icon" class="menu-icon" />
+      </nav>
+      <div class="text-box">
+        <h1>I'm <span class="auto-input"></span></h1>
+        <p>Reach out to me if you need any help in Web Development</p>
+        <a href="">Contact Me</a>
+      </div>
+      <!-- <img src="imgs/user.png" class="user-img" /> -->
+    </div>
+
+    <!-- ***ABOUT SECTION*** -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="imgs/user.png" class="user-img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              quia dolorum, ut modi aut eius, ad laborum asperiores recusandae
+              exercitationem, id maxime beatae. Quam debitis, recusandae sint
+              error blanditiis ducimus fugit totam, officia amet dicta minima in
+              eaque rem incidunt iusto! Eaque alias quasi aut cum doloremque
+              magnam dignissimos dolor!
+            </p>
+
+            <div class="tab-titles sub-title">
+              <p
+                class="tab-links tab-sections active-link"
+                onclick="openTab('skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links tab-sections" onclick="openTab('education')">
+                Education
+              </p>
+              <p class="tab-links tab-sections" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Developing web applications
+                </li>
+                <li>
+                  <span>UI/UX Design</span><br />Designing web/app interfaces
+                </li>
+                <li><span>App Development</span><br />Building mobile apps.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />
+                  Freelance Front-End Developer
+                </li>
+                <li>
+                  <span>2023</span><br />BilgeAdam Front-End Developer Trainee
+                </li>
+                <li><span>2021 - 2022</span><br />English Language Teacher</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023</span><br />BilgeAdam Front-End Developer Course
+                </li>
+                <li>
+                  <span>2016 - 2021</span><br />
+                  Yeditepe University - ELT Department
+                </li>
+                <li>
+                  <span>2018</span><br />Vancouver, Canada / EC Language School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- TECH STACK ---  -->
+    <div id="stack">
+      <div class="container">
+        <h1 class="sub-title">Tech Stack</h1>
+        <div class="stack-list">
+          <div>
+            <i class="fa-brands fa-html5 fa-2xl" style="color: #de5a02"></i>
+            <h2>HTML</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #4683ec"></i>
+            <h2>CSS</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-square-js fa-2xl" style="color: #fae81e"></i>
+            <h2>JavaScript</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-react fa-2xl" style="color: #5c98ff"></i>
+            <h2>React</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-bootstrap fa-2xl" style="color: #9500b3"></i>
+            <h2>Bootstrap</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-node fa-2xl" style="color: #149e0a"></i>
+            <h2>Node.js</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-git-alt fa-2xl" style="color: #f93f10"></i>
+            <h2>Git Version Control</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              odit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- PORTFOLIO ---- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="imgs/movievolver.JPG" />
+            <div class="layer">
+              <h3>Cinevolver - Movie App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, sunt.
+              </p>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-up-right-from-square fa-lg"
+                  style="color: #efff0a"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="imgs/todos.png" />
+            <div class="layer">
+              <h3>TODOS - Todo App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, sunt.
+              </p>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-up-right-from-square fa-lg"
+                  style="color: #efff0a"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="imgs/logo.png" />
+            <div class="layer">
+              <h3>CliMate - Weather App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, sunt.
+              </p>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-up-right-from-square fa-lg"
+                  style="color: #efff0a"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ---- CONTACT ---- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-envelope fa-l"></i>irfanbariozer@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone fa-l"></i>544 526 21 96</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+              <a href="#"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-instagram fa-2xl"></i
+              ></a>
+            </div>
+            <a href="imgs/Resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="textarea"
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5e08e5a6a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
