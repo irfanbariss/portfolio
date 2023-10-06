@@ -11,21 +11,28 @@
     ></script>
   </head>
   <body>
-    <div class="header">
-      <nav>
-        <h1 class="logo">Barış<span class="dot">.</span></h1>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <img src="imgs/menu.png" alt="Menu Icon" class="menu-icon" />
-      </nav>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">Brs<span class="dot">.dev</span></h1>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fa-2xl" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fa-xl menu-icon" onclick="openMenu()"></i>
+          <!-- <img src="imgs/menu.png" alt="Menu Icon" class="menu-icon" /> -->
+        </nav>
+      </div>
       <div class="text-box">
         <h1>I'm <span class="auto-input"></span></h1>
-        <p>Reach out to me if you need any help in Web Development</p>
-        <a href="">Contact Me</a>
+        <p>
+          Jr. Front-End developer with a huge passion for coding. <br />
+          Reach out to me if you need any help in Web Development.
+        </p>
+        <a href="#contact">Contact Me</a>
       </div>
       <!-- <img src="imgs/user.png" class="user-img" /> -->
     </div>
@@ -249,7 +256,7 @@
             <a href="imgs/Resume.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-            <form action="">
+            <form name="submit-to-google-sheet">
               <input
                 type="text"
                 name="name"
@@ -265,7 +272,7 @@
                 required
               />
               <textarea
-                name="Message"
+                name="message"
                 id="textarea"
                 cols="30"
                 rows="6"
@@ -273,8 +280,12 @@
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; İrfan Barış Özer</p>
       </div>
     </div>
     <script
@@ -283,5 +294,17 @@
     ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzDSN6DTHqrlP4WPjqU-ZjCFRgQF22rl1yXj9bHhb57D6xBHbt7e6lZRY-XwUrLiiDlUQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
