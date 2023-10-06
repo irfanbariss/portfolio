@@ -15,26 +15,7 @@ const tabLinks = document.getElementsByClassName("tab-links");
 const tabContents = document.getElementsByClassName("tab-contents");
 const sideMenu = document.getElementById("side-menu");
 
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzDSN6DTHqrlP4WPjqU-ZjCFRgQF22rl1yXj9bHhb57D6xBHbt7e6lZRY-XwUrLiiDlUQ/exec";
-const form = document.forms["submit-to-google-sheet"];
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      if (response.ok) {
-        msg.innerHTML = "Message Sent Successfully";
-        setTimeout(() => {
-          msg.innerHTML = "";
-        }, 3000);
-        form.reset();
-      }
-    })
-    .catch((error) => console.error("Error!", error.message));
-});
-
-const msg = document.getElementById("msg");
+// const msg = document.getElementById("msg");
 
 function openTab(tab) {
   for (tabLink of tabLinks) {

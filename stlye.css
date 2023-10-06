@@ -12,14 +12,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: #080808;
+    background: #161515;
     color: #b9b6b6;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    /* background: #020412; */
+    background: #080808;
     color: #fff;
     position: relative;
     padding: 0 8.5%;
@@ -27,6 +27,7 @@ body {
 
 .container {
     padding: 10px 10%;
+    /* background: #161515; */
 }
 
 .logo {
@@ -41,10 +42,18 @@ body {
 
 nav {
     display: flex;
+    padding: 1rem  3rem ;
     width: 100%;
+    height: 90px;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: #080808;
 }
 
 .menu-icon {
@@ -153,9 +162,10 @@ span{
 }
 
 .user-img   {
+    background-color: #080808;
     width: 90%;
-    border: solid 1px #080808;
-    border-radius: 100%;
+    border-radius: 10%;
+    padding-top: 1rem;
 }
 
 .about-col-1 {
@@ -269,7 +279,8 @@ span{
 }
 
 #portfolio {
-    padding: 50px 0;
+    padding: 150px 0;
+    /* margin-top: 100px; */
 }
 
 .work-list {
